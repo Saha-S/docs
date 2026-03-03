@@ -15,13 +15,13 @@ from dotenv import load_dotenv
 load_dotenv(Path(__file__).parent / ".env")
 
 # ---------------------------------------------------------------------------
-# OpenAI
+# Google Gemini
 # ---------------------------------------------------------------------------
-OPENAI_API_KEY: str = os.environ.get("OPENAI_API_KEY", "")
-OPENAI_MODEL: str = os.environ.get("OPENAI_MODEL", "gpt-4o")
+GEMINI_API_KEY: str = os.environ.get("GEMINI_API_KEY", "")
+GEMINI_MODEL: str = os.environ.get("GEMINI_MODEL", "gemini-1.5-flash")
 
 # Seconds to wait between successive API calls to respect rate limits
-API_CALL_DELAY: float = float(os.environ.get("API_CALL_DELAY", "2.0"))
+API_CALL_DELAY: float = float(os.environ.get("API_CALL_DELAY", "3.0"))
 
 # ---------------------------------------------------------------------------
 # Paths
